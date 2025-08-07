@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+//import "Proto_Common.proto";
+package HHFramework.Proto;
+
+//玩家向网关服务器注册客户端[c#]
+message C2GWS_RegClient
+{
+    int64 AccountId = 1;//玩家账号
+}
+
+//玩家向网关服务器发送进入场景申请消息
+message C2GWS_EnterScene_Apply
+{
+	int32 SceneId = 1;//场景编号
+	int32 GameLevelId = 2;//游戏关卡编号（非必要）
+	int32 GameLevelGrade = 3;//游戏关卡难度（非必要）
+}
+
+//玩家向网关服务器发送进入场景消息
+message C2GWS_EnterScene
+{
+	int32 SceneId = 1;//场景编号
+	int32 GameLevelId = 2;//游戏关卡编号（非必要）
+	int32 GameLevelGrade = 3;//游戏关卡难度（非必要）
+}
+
+//玩家向网关服务器发送心跳消息
+message C2GWS_Heartbeat
+{
+	int64 Time = 1;//时间
+	int32 Ping = 2;//
+}

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HH_ProtobufTool", "HH_ProtobufTool\HH_ProtobufTool.csproj", "{87454486-657D-4882-BAB0-3EC4286E9912}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87454486-657D-4882-BAB0-3EC4286E9912}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87454486-657D-4882-BAB0-3EC4286E9912}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87454486-657D-4882-BAB0-3EC4286E9912}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87454486-657D-4882-BAB0-3EC4286E9912}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C93D21F-3C19-4718-A235-FA4CF3EA65C3}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,250 @@
+syntax = "proto3";
+
+import "Proto_Common.proto";
+import "Proto_C2WS.proto";
+package HHFramework.Proto;
+
+//服务器返回创建角色消息[c#]
+message WS2C_ReturnCreateRole
+{
+    bool Result = 1;//结果
+    int64 RoleId = 2;//角色编号
+}
+
+//服务器返回删除角色消息[c#]
+message WS2C_ReturnDeleteRole
+{
+    bool Result = 1;//结果
+    int64 RoleId = 2;//角色编号
+}
+
+//服务器返回已有角色消息[lua]
+message WS2C_ReturnRoleList
+{
+	message WS2C_ReturnRoleList_Item
+	{
+		int64 RoleId = 1;//角色编号
+		int32 JobId = 2;//职业编号
+		int32 Sex = 3;//性别
+		string NickName = 4;//昵称
+		int32 Level = 5;//等级
+	}
+	repeated WS2C_ReturnRoleList_Item RoleList = 1;//角色列表
+}
+
+//服务器返回角色信息[c#]
+message WS2C_ReturnRoleInfo
+{
+	int64 RoleId = 1;//角色编号
+	int32 JobId = 2;//职业
+	int32 Sex = 3;//性别
+	string NickName = 4;//昵称
+	int32 Level = 5;//等级
+	int32 CurrSceneId = 6;//所在场景编号
+	int32 PrevSceneId = 7;//前场景编号
+	Vector3 CurrPos = 8;//坐标
+	float RotationY = 9;//旋转
+	int32 CurrHP = 10;//当前HP
+	int32 MaxHP = 11;//最大HP
+	int32 CurrMP = 12;//当前MP
+	int32 MaxMP = 13;//最大MP
+	int32 CurrFury = 14;//当前怒气
+	int64 CurrGold = 15;//当前金币
+	int32 Fighting = 16;//综合战斗力
+	int32 Exp = 17;//经验
+	message WearEquip
+	{
+		int32 Type = 1;//装备类型
+		int32 EquipId = 2;//装备编号
+		int32 GoodsServerId = 3;//装备服务器端编号
+	}
+	repeated WearEquip WearEquipList =18;//穿戴装备列表
+	int32 CurrGameLevelId = 19;//当前游戏关卡
+	int32 CurrGameLevelGrade =20;//当前游戏难度
+	int32 PassGameLevelId = 21;//通关游戏关卡
+}
+
+//服务器返回金币更新消息[lua]
+message WS2C_ReturnGoldChange
+{
+	int64 OldGold = 1;//更新前金币
+	int64 CurrGold = 2;//更新后当前金币
+	ChangeType ChangeType = 3;//更新方式
+	GoldAddType AddType = 4;//增加的方式
+	GoldReduceType ReduceType = 5;//减少的方式
+	GoodsType GoodsType = 6;//物品类型
+	int32 GoodsId = 7;//物品编号
+}
+
+//服务器返回元宝更新消息[lua]
+message WS2C_ReturnMoneyChange
+{
+	int64 OldMoney = 1;//更新前元宝
+	int64 CurrMoney = 2;//更新后当前元宝
+	ChangeType ChangeType = 3;//更新方式
+	MoneyAddType AddType = 4;//增加的方式
+	MoneyReduceType ReduceType = 5;//减少的方式
+	GoodsType GoodsType = 6;//物品类型
+	int32 GoodsId = 7;//物品编号
+}
+
+//服务器返回进入游戏完毕消息[c#]
+message WS2C_ReturnEnterGameComplete
+{
+
+}
+
+//服务器返回聊天消息[c#]
+message WS2C_ReturnChatMsg
+{
+	repeated C2WS_Chat_Data ChatMsgList = 1;//聊天消息列表
+}
+
+//服务器推送聊天消息[c#]
+message WS2C_PushChatMsg
+{
+	C2WS_Chat_Data ChatMsg = 1;//聊天消息
+}
+
+//服务器返回商城物品购买消息[lua]
+message WS2C_ReturnShopBuyProduct
+{
+	bool Result = 1;//结果
+	int32 MsgCode = 2;//消息码
+}
+
+//服务器返回角色充值信息[lua]
+message WS2C_ReturnRecharge
+{
+	bool Result = 1;//结果
+	int32 MsgCode = 2;//消息码
+	int32 ProductId = 3;//充值产品Id
+	int32 ProductType = 4;//产品类型
+	int32 RemainDay = 5;//剩余天数
+	int64 TotalRechargeMoney = 6;//累计充值元宝
+}
+
+//服务器返回充值产品信息[c#][lua]
+message WS2C_ReturnRechargeProduct
+{
+	message WS2C_ReturnRechargeProduct_Item
+	{
+		int32 ProductId = 1;//充值产品Id
+		string ProductDesc = 2;//描述
+		bool CanBuy = 3;//是否可以购买
+		int32 RemainDay = 4;//剩余天数
+		bool DoubleFlag = 5;//是否双倍
+	}
+	repeated WS2C_ReturnRechargeProduct_Item RechargeProductList = 1;//充值产品列表
+}
+
+//服务器返回背包物品更新消息[lua]
+message WS2C_ReturnBackpackGoodsChange
+{
+	message WS2C_ReturnBackpackGoodsChange_Item
+	{
+		int32 BackpackItemId = 1;//背包项编号
+		int32 ChangeType = 2;//改变类型
+		GoodsType GoodsType = 3;//物品类型
+		int32 GoodsId = 4;//物品编号
+		int32 GoodsCount = 5;//物品数量
+		int32 GoodsServerId = 6;//物品服务器端编号
+	}
+	repeated WS2C_ReturnBackpackGoodsChange_Item GoodsChangeList = 1;//物品更新列表
+}
+
+//服务器返回查询背包项消息[lua]
+message WS2C_ReturnSearchBackpack
+{
+	message WS2C_ReturnSearchBackpack_Item
+	{
+		int32 BackpackItemId = 1;//背包项编号
+		GoodsType GoodsType = 2;//物品类型
+		int32 GoodsId = 3;//物品编号
+		int32 GoodsServerId = 4;//物品服务器端编号
+		int32 GoodsOverlayCount = 5;//物品叠加数量
+	}
+	repeated WS2C_ReturnSearchBackpack_Item SearchList = 1;//物品查询列表
+}
+
+//服务器返回查询装备详情消息[lua]
+message WS2C_ReturnSearchEquipDetail
+{
+	int64 EnchantLevel = 1;//强化等级
+	int64 EnchantCount = 2;//强化次数
+	int32 BaseAttr1Type = 3;//基础属性1类型
+	int64 BaseAttr1Value = 4;//基础属性1值
+	int32 BaseAttr2Type = 5;//基础属性2类型
+	int64 BaseAttr2Value = 6;//基础属性2值
+	int64 Hp = 7;//Hp加成值
+	int64 Mp = 8;//Mp加成值
+	int64 Atk = 9;//攻击
+	int64 Def = 10;//防御
+	int64 CriticalRate = 11;//暴击率
+	int64 CriticalResRate = 12;//抗暴率
+	int64 CriticalStrengthRate = 13;//暴击强度率
+	int64 BlockRate = 14;//格档率
+	int64 BlockResRate = 15;//破击率
+	int64 BlockStrengthRate = 16;//格挡强度率
+	int64 InjureRate = 17;//增伤率
+	int64 InjureResRate = 18;//减伤率
+	int64 ExSkillInjureRate = 19;//技能伤害率
+	int64 ExSkillInjureResRate = 20;//技能抗性率
+	int64 IgnoreDefRate = 21;//无视防御率
+	bool IsPutOn = 22;//是否已经穿戴
+}
+
+//服务器返回出售物品给系统消息[lua]
+message WS2C_ReturnSellToSys
+{
+	bool IsSuccess = 1;//是否成功
+	int32 MsgCode = 2;//消息码
+}
+
+//服务器返回使用道具消息[lua]
+message WS2C_ReturnUseItem
+{
+	bool IsSuccess = 1;//是否成功
+	int32 MsgCode = 2;//消息码
+	int32 GoodsId = 3;//物品编号
+}
+
+//服务器返回穿戴消息[lua]
+message WS2C_ReturnEquipPut
+{
+	bool IsSuccess = 1;//是否成功
+	int32 MsgCode = 2;//消息码
+	int32 Type = 3;//0=穿上 1=脱下
+	int32 GoodsId = 4;//物品编号
+	int32 GoodsServerId = 5;//装备服务器端编号
+}
+
+//服务器返回游戏关卡结算消息[lua]
+message WS2C_ReturnGameLevelSettlement
+{
+	message WS2C_ReturnGameLevelRwdLst_Data
+	{
+		int32 Id = 1;//物品编号
+		GoodsType GoodsType = 2;//物品类型
+		int32 Count = 3;//物品数量
+	}
+	int32 GameLevelId = 1;//游戏关卡编号
+	int32 GameLevelGrade = 2;//游戏关卡难度
+	int32 PassTime = 3;//游戏关卡时间
+	bool IsVictory = 4;//是否通关
+	repeated WS2C_ReturnGameLevelRwdLst_Data RwdLst = 5;//奖励物品表
+}
+
+//服务器返回角色经验变更消息[lua]
+message WS2C_ReturnRoleExpChange
+{
+	int32 OldExp = 1;//更新前经验值
+	int32 CurrExp = 2;//更新后经验值
+}
+
+//服务器返回角色等级变更消息[lua]
+message WS2C_ReturnRoleLevelChange
+{
+	int32 OldLevel = 1;//更新前等级
+	int32 CurrLevel = 2;//更新后等级
+}

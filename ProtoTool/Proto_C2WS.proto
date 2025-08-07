@@ -1,0 +1,90 @@
+syntax = "proto3";
+
+import "Proto_Common.proto";
+package HHFramework.Proto;
+
+//玩家向服务器发送创建角色消息
+message C2WS_CreateRole
+{
+    int32 JobId = 1;//职业编号
+    int32 Sex = 2;//性别
+    string NickName = 3;//昵称
+}
+
+//玩家向服务器发送查询已有角色消息
+message C2WS_GetRoleList
+{
+
+}
+
+//玩家向服务器发送删除角色消息
+message C2WS_DeleteRole
+{
+	int64 RoleId = 1;//角色编号
+}
+
+//玩家向服务器发送进入游戏消息
+message C2WS_EnterGame
+{
+	int64 RoleId = 1;//角色编号
+}
+
+//聊天消息体
+message C2WS_Chat_Data
+{
+    ChatChannel Channel = 1;//频道
+	int64 RoleId = 2;//角色编号
+    int32 Level = 3;//等级
+    string NickName = 4;//昵称
+    int32 JobId = 5;//职业编号
+    string Head = 6;//头像
+    string Content = 7;//聊天内容
+}
+
+//玩家向服务器发送聊天游戏消息
+message C2WS_SendChatMsg
+{
+	C2WS_Chat_Data ChatMsg = 1;//聊天内容
+}
+
+//客户端发送购买商城物品消息
+message C2WS_ShopBuyProduct
+{
+	int32 ProductId = 1;//商品编号
+}
+
+//客户端发送查询背包项消息
+message C2WS_SearchBackpack
+{
+}
+
+//客户端发送查询装备详情消息
+message C2WS_SearchEquipDetail
+{
+	int32 GoodsServerId = 1;//物品服务器端编号
+}
+
+//客户端发送出售物品给系统消息
+message C2WS_SellToSys
+{
+	int32 BackpackItemId = 1;//背包项编号
+	GoodsType GoodsType = 2;//物品类型
+	int32 GoodsId = 3;//物品编号
+	int32 GoodsServerId = 4;//物品服务器端编号
+	int32 SellCount = 5;//物品出售数量
+}
+
+//客户端发送使用道具消息
+message C2WS_UseItem
+{
+	int32 BackpackItemId = 1;//背包项编号
+	int32 GoodsId = 2;//物品编号
+}
+
+//客户端发送装备穿戴消息
+message C2WS_EquipPut
+{
+	int32 Type = 1;//0=穿上 1=脱下
+	int32 GoodsId = 2;//装备编号
+	int32 GoodsServerId = 3;//装备服务器端编号
+}

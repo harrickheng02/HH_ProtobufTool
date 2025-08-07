@@ -1,0 +1,25 @@
+syntax = "proto3";
+package HHFramework.Proto;
+
+//获取路径点
+message NS2GS_Vector3
+{
+	float x = 1;//
+	float y = 2;//
+	float z = 3;//
+}
+
+//获取路径点
+message NS2GS_ReturnNavPath
+{
+	int64 TaskId = 1; //任务编号
+	int64 ServerTime = 2;//服务器时间(透传)
+    bool Valid = 3;//有效
+    repeated NS2GS_Vector3 Path = 4;//路径
+}
+
+//寻路服务器返回心跳消息
+message NS2GS_Heartbeat
+{
+	int64 ServerTime = 1;//服务器时间
+}

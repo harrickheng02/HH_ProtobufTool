@@ -1,0 +1,27 @@
+syntax = "proto3";
+package HHFramework.Proto;
+
+//获取路径点
+message GS2NS_Vector3
+{
+  float x = 1;//
+  float y = 2;//
+  float z = 3;//
+}
+
+//获取路径点
+message GS2NS_GetNavPath
+{
+  int64 TaskId = 1; //任务编号
+  int32 SceneId = 2;//场景编号
+  GS2NS_Vector3 BeginPos = 3;//开始坐标
+  GS2NS_Vector3 EndPos = 4;//结束坐标
+  int64 ServerTime = 5;//服务器时间(透传)
+}
+
+//游戏服务器向寻路服务器发送心跳消息
+message GS2NS_Heartbeat
+{
+  int64 ServerTime = 1;//服务器时间
+  int32 Ping = 2;//
+}

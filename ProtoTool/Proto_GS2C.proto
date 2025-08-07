@@ -1,0 +1,112 @@
+syntax = "proto3";
+
+import "Proto_Common.proto";
+package HHFramework.Proto;
+
+//服务器返回进入场景申请[c#]
+message GS2C_ReturnEnterScene_Apply
+{
+    int32 SceneId = 1;//场景编号
+	int32 GameLevelId = 2;//游戏关卡编号（非必要）
+	int32 GameLevelGrade = 3;//游戏关卡难度（非必要）
+	bool Result = 4;//是否可以进入
+	Vector3 CurrPos = 5;//坐标
+	float RotationY = 6;//旋转
+}
+
+//服务器返回场景线中角色列表消息[c#][lua]
+message GS2C_SceneLineRole_DATA
+{
+	RoleType RoleType = 1;//角色类型
+	int64 RoleId = 2;//角色编号
+	int32 BaseRoleId = 3;//基础角色编号职业id或者怪id
+	int32 Sex = 4;//性别
+	string NickName = 5;//昵称
+	int32 Level = 6;//等级
+	Vector3 CurrPos = 7;//坐标
+	float RotationY = 8;//旋转
+	Vector3 TargetPos = 9;//移动目标点
+	int32 Status = 10;//状态
+	int32 CurrHP = 11;//当前HP
+	int32 MaxHP = 12;//最大HP
+	int32 CurrMP = 13;//当前MP
+	int32 MaxMP = 14;//最大MP
+	int32 CurrFury = 15;//当前怒气
+}
+	
+//服务器返回场景线中角色列表消息[c#][lua]
+message GS2C_ReturnSceneLineRoleList
+{
+	repeated GS2C_SceneLineRole_DATA RoleList = 1;//角色列表
+}
+
+//服务器返回角色进入场景线消息[c#]
+message GS2C_ReturnRoleEnterSceneLine
+{
+	repeated GS2C_SceneLineRole_DATA RoleList = 1;//角色列表
+}
+
+//服务器返回角色离开场景线消息[c#]
+message GS2C_ReturnRoleLeaveSceneLine
+{
+	int64 RoleId = 1;//角色编号
+	LeaveSceneLineType leaveSceneLineType = 2; //离开原因
+}
+
+//服务器返回角色状态修改消息[c#]
+message GS2C_ReturnRoleChangeState
+{
+	int64 RoleId = 1;//角色编号
+	int32 Status = 2;//状态
+	int32 SkillId = 3;//技能编号
+	int32 SkillLevel = 4;//技能等级
+	Vector3 CurrPos = 5;//坐标
+	float RotationY = 6;//旋转
+	Vector3 TargetPos = 7;//移动目标点
+	float RunSpeed = 8;//移动速度
+	PlayerActionType ActionType = 9;//玩家操作方式
+	int64 CauseId = 10;//来源编号
+}
+
+//buff数据
+message GS2C_Buff_Data
+{
+	int32 BuffId = 1;//buff编号
+	int32 RemainTime = 2;//剩余时间
+}
+
+//服务器返回角色战斗数据修改消息[c#]
+message GS2C_ReturnRoleBattleDataChange
+{
+	int64 RoleId = 1;//角色编号
+	int32 MaxHp = 2;//最大血量
+	int32 CurrHp = 3;//当前血量
+	int32 CurrFury = 4;//当前怒气
+	int32 MaxMp = 5;//最大mp
+	int32 CurrMp = 6;//当前mp
+	int32 HurtValue = 7;//伤害值
+	int64 AttackRoleId = 8;//攻击者
+	repeated GS2C_Buff_Data AddBuffs = 9;//添加的buff
+	repeated int32 RemoveBuffs = 10;//移除的buff
+}
+
+//服务器返回角色buff到期消息[c#]
+message GS2C_ReturnRoleBuffExpires
+{
+	int64 RoleId = 1;//角色编号
+	int32 BuffId = 2;//buff编号
+}
+
+//服务器返回角色buff持续掉血消息[c#]
+message GS2C_ReturnRoleBuffContinueHurt
+{
+	int64 RoleId = 1;//角色编号
+	int32 BuffId = 2;//buff编号
+	int32 HurtValue = 3;//伤害值
+}
+
+//服务器返回角色通关区域消息[c#]
+message GS2C_ReturnRolePassRegion
+{
+	int32 RegionId = 1;//通关区域编号
+}

@@ -1,0 +1,109 @@
+syntax = "proto3";
+package HHFramework.Proto;
+
+//Vector3
+message Vector3
+{
+	float x = 1;//
+	float y = 2;//
+	float z = 3;//
+}
+
+//角色类型
+enum RoleType
+{
+	Player = 0; //玩家
+	Monster = 1; //怪
+}
+
+//玩家下线类型
+enum OfflineType
+{
+	ServerMaintain = 0;//服务器维护
+	Replace = 1;//顶下线
+}
+
+//离开场景线类型
+enum LeaveSceneLineType
+{
+	Normal = 0;//普通
+	Die = 1;//死亡
+}
+
+//玩家操作类型
+enum PlayerActionType
+{
+	ClickMove = 0;//点击移动
+	ServerMove = 1;//服务器移动
+	JoystickMove = 2;//摇杆移动
+	JoystickStop = 3;//摇杆抬起
+	Transfer = 4;//传送
+}
+
+enum RoleBattleRetCode
+{
+	None = 0;
+	MpDeficiency = 1;//MP不足
+}
+
+//聊天频道
+enum ChatChannel
+{
+	Sys = 0;//系统
+	World = 1;//世界
+	Friend = 2;//好友
+	Gand = 3;//帮会
+	League = 4;//同盟
+	Team = 5;//队伍
+}
+
+//更新方式
+enum ChangeType
+{
+	Add = 0;//增加
+	Reduce = 1;//减少
+}
+
+//元宝增加方式
+enum MoneyAddType
+{
+	NoneMoneyAddType = 0;
+	Recharge = 1;//充值
+	ItemUsedForMoney = 2;//元宝票
+	SysAward = 3;//系统奖励
+	GMAward = 4;//GM奖励或补偿
+}
+
+//元宝减少方式
+enum MoneyReduceType
+{
+	NoneMoneyReduceType = 0;
+	BuyShop = 1;//购买商城物品
+	BuyTicket = 2;//兑换成元宝票
+	Reborn = 3;//原地复活
+}
+
+//金币增加方式
+enum GoldAddType
+{
+	NoneGoldAddType = 0;
+	GoodsSell = 1;//出售物品
+	ItemUsedForGold = 2;//使用道具
+	GameLevelRwd = 3;//关卡结算奖励
+	MonsterKillRwd = 4;//怪物击杀奖励
+}
+
+//金币减少方式
+enum GoldReduceType
+{
+	NoneGoldReduceType = 0;
+	BuyGoods = 1;//购买物品
+}
+
+//物品类型
+enum GoodsType
+{
+	Equip = 0;//装备
+	Item = 1;//道具
+	Materials = 2;//材料
+}

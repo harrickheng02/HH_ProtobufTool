@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+import "Proto_Common.proto";
+package HHFramework.Proto;
+
+//网关服务器返回注册客户端结果[c#]
+message GWS2C_ReturnRegClient
+{
+    bool Result = 1;//结果
+}
+
+//网关服务器返回心跳消息[c#]
+message GWS2C_Heartbeat
+{
+	int64 Time = 1;//时间
+	int64 ServerTime = 2;//服务器时间
+	int32 ToGameServerPing = 3;//网关服务器到游戏服的ping
+}
+
+//服务器返回角色下线消息[c#]
+message GWS2C_ReturnOffline
+{
+	OfflineType Type = 1;//下线类型
+}
+
+//服务器返回配置列表[c#][lua]
+message GWS2C_ReturnGameServerConfig
+{
+	message GWS2C_ReturnGameServerConfig_Item
+	{
+		string ConfigCode = 1;//配置编号
+		bool IsOpen = 2;//是否开启
+		string Param = 3;//参数
+	}
+	repeated GWS2C_ReturnGameServerConfig_Item GameServerConfigList = 1;//配置表
+}

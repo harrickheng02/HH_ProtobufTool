@@ -1,0 +1,25 @@
+syntax = "proto3";
+package HHFramework.Proto;
+
+//游戏服务器注册到中心服务器
+message GS2WS_RegGameServer
+{
+    int32 ServerId = 1;//服务器编号
+}
+
+//游戏服务器返回游戏关卡结算消息
+message GS2WS_ReturnGameLevelSettlement
+{
+	int64 AccountId = 1;//账号编号
+	int32 GameLevelId = 2;//游戏关卡编号
+	int32 GameLevelGrade = 3;//游戏关卡难度
+	int32 PassTime = 4;//游戏关卡时间
+	bool IsVictory = 5;// 是否胜利
+}
+
+//游戏服务器返回游戏关卡击杀怪物消息
+message GS2WS_ReturnGameLevelKillMonster
+{
+	int64 AccountId = 1;//账号编号
+	int32 GameLevelMonsterId = 2;//关卡怪物表编号
+}

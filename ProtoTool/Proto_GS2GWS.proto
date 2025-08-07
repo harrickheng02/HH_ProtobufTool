@@ -1,0 +1,8 @@
+syntax = "proto3";
+package HHFramework.Proto;
+
+//游戏服务器向网关服务器返回心跳消息
+message GS2GWS_Heartbeat
+{
+	int64 ServerTime = 1;//服务器时间
+}

@@ -1,0 +1,48 @@
+syntax = "proto3";
+package HHFramework.Proto;
+
+//网关服务器注册到游戏服务器
+message GWS2GS_RegGatewayServer
+{
+	int32 ServerId = 1;//服务器编号
+}
+
+//网关服务器发送心跳到游戏服
+message GWS2GS_Heartbeat
+{
+	int64 ServerTime = 1;//服务器时间
+	int32 Ping = 2;//
+}
+
+//网关服务器向游戏服务器发送角色离开场景消息
+message GWS2GS_LeaveScene
+{
+	int64 RoleId = 1;//角色编号
+	int32 SceneId = 2;//场景编号
+	int32 TargetSceneId = 3;//目标场景编号
+}
+
+//网关服务器向游戏服务器发送角色下线消息
+message GWS2GS_Offline
+{
+	int64 AccountId = 1;//玩家账号
+}
+
+//网关服务器向游戏服务器发送角色进入场景申请消息
+message GWS2GS_EnterScene_Apply
+{
+	int64 RoleId = 1;//角色编号
+	int32 PrevSceneId = 2;//上一场景编号
+	int32 SceneId = 3;//场景编号
+	int32 GameLevelId = 4;//游戏关卡编号（非必要）
+	int32 GameLevelGrade = 5;//游戏关卡难度（非必要）
+}
+
+//网关服务器向游戏服务器发送角色进入场景消息
+message GWS2GS_EnterScene
+{
+	int64 RoleId = 1;//角色编号
+	int32 SceneId = 2;//场景编号
+	int32 GameLevelId = 3;//游戏关卡编号（非必要）
+	int32 GameLevelGrade = 4;//游戏关卡难度（非必要）
+}

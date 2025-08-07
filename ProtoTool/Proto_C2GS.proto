@@ -1,0 +1,55 @@
+syntax = "proto3";
+
+import "Proto_Common.proto";
+package HHFramework.Proto;
+
+//玩家向服务器发送点击移动消息
+message C2GS_ClickMove
+{
+	Vector3 CurrPos = 1;//当前位置
+	Vector3 TargetPos = 2;//目标点
+	int32 TargetRoleType = 3;//锁定目标角色类型:0自己/1其他玩家/2怪
+	int64 TargetRoleId = 4;//锁定目标角色编号
+	int32 SkillId = 5;//移动后发动技能的编号
+}
+
+//玩家向服务器发送摇杆移动消息
+message C2GS_JoystickMove
+{
+	Vector3 CurrPos = 1;//当前位置
+	Vector3 MoveDir = 2;//移动方向
+}
+
+//玩家向服务器发送抬起摇杆消息
+message C2GS_JoystickStop
+{
+	Vector3 CurrPos = 1;//当前位置
+	float RotationY = 2;//旋转
+}
+
+//玩家向服务器发送进入AOI区域消息
+message C2GS_Enter_AOIArea
+{
+	int32 AreaId = 1;//场景编号
+}
+
+//玩家向服务器发送传送消息
+message C2GS_RoleTransfer
+{
+	Vector3 CurrPos = 1;//当前位置
+	Vector3 TargetPos = 2;//目标点
+}
+
+//玩家向服务器发送播放技能消息
+message C2GS_PlaySkill
+{
+	int32 TargetRoleType = 1;//锁定目标角色类型:0自己/1其他玩家/2怪
+	int64 TargetRoleId = 2;//锁定目标角色编号
+	int32 SkillId = 3;//技能编号
+}
+
+//玩家向服务器发送到达区域消息
+message C2GS_Enter_RegionId
+{
+	int32 RegionId = 1;//区域编号
+}
