@@ -1,18 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Root>
   <ProtocPath>C:\Code\HH_ProtobufTool\ProtoTool</ProtocPath>
-
-  
   <ClientOutProtoPath>C:\Code\HH_Framework\Assets\HHScripts\Data\ProtoData\Proto\</ClientOutProtoPath>
   <ClientOutProtoHandlerPath>C:\Code\HH_Framework\Assets\HHScripts\Data\ProtoData\ProtoHandler\</ClientOutProtoHandlerPath>
   <ClientOutProtoIdDefinePath>C:\Code\HH_Framework\Assets\HHScripts\Data\ProtoData\ProtoIdDefine.cs</ClientOutProtoIdDefinePath>
   <ClientOutSocketProtoListenerPath>C:\Code\HH_Framework\Assets\HHScripts\Data\ProtoData\SocketProtoListener.cs</ClientOutSocketProtoListenerPath>
-
   <ClientOutLuaPBPath>C:\Code\HH_Framework\Assets\Download\xLuaLogic\PB\</ClientOutLuaPBPath>
   <ClientOutLuaProtoHandlerPath>C:\Code\HH_Framework\Assets\Download\xLuaLogic\DataNode\ProtoHandler\</ClientOutLuaProtoHandlerPath>
   <ClientOutLuaProtoDefPath>C:\Code\HH_Framework\Assets\Download\xLuaLogic\DataNode\Proto\ProtoDef.bytes</ClientOutLuaProtoDefPath>
   <ClientOutLuaProtoListenerPath>C:\Code\HH_Framework\Assets\Download\xLuaLogic\DataNode\Proto\SocketProtoListenerForLua.bytes</ClientOutLuaProtoListenerPath>
-
   <ServerOutProtoPath>C:\Code\Server\HHServer\HHServer.Common\ProtoData\Proto\</ServerOutProtoPath>
   <ServerOutProtoIdDefinePath>C:\Code\Server\HHServer\HHServer.Common\ProtoData\ProtoIdDefine.cs</ServerOutProtoIdDefinePath>
 </Root>

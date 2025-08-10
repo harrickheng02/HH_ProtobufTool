@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 using System.Windows;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
+using System.Xml;
 using HH_ProtobufTool;
 
 namespace HH_ProtobufTool_WPF
@@ -47,17 +49,17 @@ namespace HH_ProtobufTool_WPF
             if (isDirectory)
             {
                 // 文件夹选择模式
-                using (var folderDialog = new FolderBrowserDialog())
-                {
-                    folderDialog.Description = "选择目标文件夹";
-                    folderDialog.SelectedPath = Directory.Exists(targetTextBox.Text)
-                        ? targetTextBox.Text
-                        : Path.GetDirectoryName(targetTextBox.Text);
+                using var folderDialog = new FolderBrowserDialog();
+                folderDialog.Description = "选择目标文件夹";
+                folderDialog.SelectedPath = Directory.Exists(targetTextBox.Text)
+                    ? targetTextBox.Text
+                    : Path.GetDirectoryName(targetTextBox.Text);
 
-                    if (folderDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-                    {
-                        targetTextBox.Text = folderDialog.SelectedPath;
-                    }
+                if (folderDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    targetTextBox.Text =
+                        !string.IsNullOrEmpty(folderDialog.SelectedPath) ? folderDialog.SelectedPath : string.Empty;
+                    UpdateConfig(targetTextBox.Name, targetTextBox.Text);
                 }
             }
             else
@@ -76,8 +78,52 @@ namespace HH_ProtobufTool_WPF
 
                 if (openFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
-                    targetTextBox.Text = openFileDialog.FileName;
+                    targetTextBox.Text = !string.IsNullOrEmpty(openFileDialog.FileName)
+                        ? openFileDialog.FileName
+                        : string.Empty;
+                    UpdateConfig(targetTextBox.Name, targetTextBox.Text);
                 }
+            }
+        }
+
+        private static void UpdateConfig(string fieldName, string newValue)
+        {
+            if (AppDomain.CurrentDomain.BaseDirectory == null) return;
+            var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Config.xml");
+            if (!File.Exists(path))
+                throw new FileNotFoundException("配置文件不存在");
+
+            var doc = new XmlDocument();
+            doc.Load(path);
+
+            var node = doc.SelectSingleNode($"/Root/{fieldName}");
+            if (node == null)
+                throw new ArgumentException($"配置字段 {fieldName} 不存在");
+
+            node.InnerText = newValue.Trim();
+
+            // 使用带编码设置的XmlWriter
+            var settings = new XmlWriterSettings {
+                Indent = true,
+                Encoding = System.Text.Encoding.UTF8,
+                CloseOutput = true  // 确保流被正确关闭
+            };
+
+            try
+            {
+                using var writer = XmlWriter.Create(path, settings);
+                doc.Save(writer);
+            }
+            catch (UnauthorizedAccessException ue)
+            {
+                // 处理权限问题
+                Debug.Write(ue.Message);
+            }
+            catch (IOException ex)
+            {
+                // 处理文件占用情况
+                Debug.Write(ex.Message);
+                throw;
             }
         }
 
@@ -144,10 +190,10 @@ namespace HH_ProtobufTool_WPF
                         {
                             // 计算进度百分比
                             var progressPercent = (double)current / total;
-                    
+
                             // 更新进度条宽度
                             ProgressIndicator.Value = progressPercent * totalWidth;
-                    
+
                             // 更新文本
                             ProgressTextBlock.Text = $"{message} ({current}/{total})";
                         });
@@ -158,7 +204,7 @@ namespace HH_ProtobufTool_WPF
                         {
                             ProgressTextBlock.Text = $"协议生成成功! 耗时: {elapsed}ms";
                             ProgressIndicator.Value = 0;
-                            
+
                             // 重新启用按钮
                             GenerateButton.IsEnabled = true;
                         });

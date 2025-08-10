@@ -663,7 +663,7 @@ namespace HH_ProtobufTool
         }
 
         #endregion
-        
+
         #region CreateServerProtoId 创建c#服务器协议编号
 
         /// <summary>
@@ -719,12 +719,12 @@ namespace HH_ProtobufTool
         /// </summary>
         private static void CopyProtoServer()
         {
-            //把这些文件复制到目标目录
-            string[] files = Directory.GetFiles(Config.ProtocPath + "/CSharpProto");
+            // 把这些文件复制到目标目录
+            var files = Directory.GetFiles(Path.Combine(Config.ProtocPath, "CSharpProto"));
             foreach (string file in files)
             {
-                FileInfo fileInfo = new FileInfo(file);
-                File.Copy(fileInfo.FullName, Config.ServerOutProtoPath + "/" + fileInfo.Name, true);
+                var fileInfo = new FileInfo(file);
+                File.Copy(fileInfo.FullName, Path.Combine(Config.ServerOutProtoPath, fileInfo.Name), true);
             }
         }
 

@@ -26,7 +26,7 @@
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="Auto" />
                             </Grid.ColumnDefinitions>
-                            <TextBox x:Name="ProtocPath" Grid.Column="0" Margin="5,0,5,0"
+                            <TextBox IsReadOnly="True" x:Name="ProtocPath" Grid.Column="0" Margin="5,0,5,0"
                                      HorizontalAlignment="Stretch" VerticalAlignment="Center" />
                             <Button Content="..." Grid.Column="1" Width="80"
                                     HorizontalAlignment="Right" Click="BrowseProtocPath_Click" />
@@ -42,7 +42,7 @@
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="Auto" />
                             </Grid.ColumnDefinitions>
-                            <TextBox x:Name="ClientOutProtoPath" Grid.Column="0" Margin="5,0,5,0"
+                            <TextBox IsReadOnly="True" x:Name="ClientOutProtoPath" Grid.Column="0" Margin="5,0,5,0"
                                      HorizontalAlignment="Stretch" VerticalAlignment="Center" />
                             <Button Content="..." Grid.Column="1" Width="80"
                                     HorizontalAlignment="Right" Click="BrowseClientOutProtoPath_Click" />
@@ -53,7 +53,7 @@
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="Auto" />
                             </Grid.ColumnDefinitions>
-                            <TextBox x:Name="ClientOutProtoHandlerPath" Grid.Column="0" Margin="5,0,5,0"
+                            <TextBox IsReadOnly="True" x:Name="ClientOutProtoHandlerPath" Grid.Column="0" Margin="5,0,5,0"
                                      HorizontalAlignment="Stretch" VerticalAlignment="Center" />
                             <Button Content="..." Grid.Column="1" Width="80"
                                     HorizontalAlignment="Right" Click="BrowseClientOutProtoHandlerPath_Click" />
@@ -64,7 +64,7 @@
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="Auto" />
                             </Grid.ColumnDefinitions>
-                            <TextBox x:Name="ClientOutProtoIdDefinePath" Grid.Column="0" Margin="5,0,5,0"
+                            <TextBox IsReadOnly="True" x:Name="ClientOutProtoIdDefinePath" Grid.Column="0" Margin="5,0,5,0"
                                      HorizontalAlignment="Stretch" VerticalAlignment="Center" />
                             <Button Content="..." Grid.Column="1" Width="80"
                                     HorizontalAlignment="Right" Click="BrowseClientOutProtoIdDefinePath_Click" />
@@ -75,7 +75,7 @@
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="Auto" />
                             </Grid.ColumnDefinitions>
-                            <TextBox x:Name="ClientOutSocketProtoListenerPath" Grid.Column="0" Margin="5,0,5,0"
+                            <TextBox IsReadOnly="True" x:Name="ClientOutSocketProtoListenerPath" Grid.Column="0" Margin="5,0,5,0"
                                      HorizontalAlignment="Stretch" VerticalAlignment="Center" />
                             <Button Content="..." Grid.Column="1" Width="80"
                                     HorizontalAlignment="Right" Click="BrowseClientOutSocketProtoListenerPath_Click" />
@@ -91,7 +91,7 @@
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="Auto" />
                             </Grid.ColumnDefinitions>
-                            <TextBox x:Name="ClientOutLuaPBPath" Grid.Column="0" Margin="5,0,5,0"
+                            <TextBox IsReadOnly="True" x:Name="ClientOutLuaPBPath" Grid.Column="0" Margin="5,0,5,0"
                                      HorizontalAlignment="Stretch" VerticalAlignment="Center" />
                             <Button Content="..." Grid.Column="1" Width="80"
                                     HorizontalAlignment="Right" Click="BrowseClientOutLuaPBPath_Click" />
@@ -102,7 +102,7 @@
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="Auto" />
                             </Grid.ColumnDefinitions>
-                            <TextBox x:Name="ClientOutLuaProtoHandlerPath" Grid.Column="0" Margin="5,0,5,0"
+                            <TextBox IsReadOnly="True" x:Name="ClientOutLuaProtoHandlerPath" Grid.Column="0" Margin="5,0,5,0"
                                      HorizontalAlignment="Stretch" VerticalAlignment="Center" />
                             <Button Content="..." Grid.Column="1" Width="80"
                                     HorizontalAlignment="Right" Click="BrowseClientOutLuaProtoHandlerPath_Click" />
@@ -113,7 +113,7 @@
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="Auto" />
                             </Grid.ColumnDefinitions>
-                            <TextBox x:Name="ClientOutLuaProtoDefPath" Grid.Column="0" Margin="5,0,5,0"
+                            <TextBox IsReadOnly="True" x:Name="ClientOutLuaProtoDefPath" Grid.Column="0" Margin="5,0,5,0"
                                      HorizontalAlignment="Stretch" VerticalAlignment="Center" />
                             <Button Content="..." Grid.Column="1" Width="80"
                                     HorizontalAlignment="Right" Click="BrowseClientOutLuaProtoDefPath_Click" />
@@ -124,7 +124,7 @@
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="Auto" />
                             </Grid.ColumnDefinitions>
-                            <TextBox x:Name="ClientOutLuaProtoListenerPath" Grid.Column="0" Margin="5,0,5,0"
+                            <TextBox IsReadOnly="True" x:Name="ClientOutLuaProtoListenerPath" Grid.Column="0" Margin="5,0,5,0"
                                      HorizontalAlignment="Stretch" VerticalAlignment="Center" />
                             <Button Content="..." Grid.Column="1" Width="80"
                                     HorizontalAlignment="Right" Click="BrowseClientOutLuaProtoListenerPath_Click" />
@@ -140,7 +140,7 @@
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="Auto" />
                             </Grid.ColumnDefinitions>
-                            <TextBox x:Name="ServerOutProtoPath" Grid.Column="0" Margin="5,0,5,0"
+                            <TextBox IsReadOnly="True" x:Name="ServerOutProtoPath" Grid.Column="0" Margin="5,0,5,0"
                                      HorizontalAlignment="Stretch" VerticalAlignment="Center" />
                             <Button Content="..." Grid.Column="1" Width="80"
                                     HorizontalAlignment="Right" Click="BrowseServerOutProtoPath_Click" />
@@ -151,7 +151,7 @@
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="Auto" />
                             </Grid.ColumnDefinitions>
-                            <TextBox x:Name="ServerOutProtoIdDefinePath" Grid.Column="0" Margin="5,0,5,0"
+                            <TextBox IsReadOnly="True" x:Name="ServerOutProtoIdDefinePath" Grid.Column="0" Margin="5,0,5,0"
                                      HorizontalAlignment="Stretch" VerticalAlignment="Center" />
                             <Button Content="..." Grid.Column="1" Width="80"
                                     HorizontalAlignment="Right" Click="BrowseServerOutProtoIdDefinePath_Click" />

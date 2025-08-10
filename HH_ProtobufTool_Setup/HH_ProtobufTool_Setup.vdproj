@@ -27,13 +27,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_1714E2798D0243529B8EB81DE2B64E66"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_283E8D00EB1445C4870B531CAF7F8856"
+        "MsmKey" = "8:_3034812AB5514DACBF950A49B21A0410"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -52,19 +46,37 @@
         "Entry"
         {
         "MsmKey" = "8:_34D59308129B26D49A87B70D8BBE8349"
-        "OwnerKey" = "8:_50EC3310EE874D06820B783A570DE59A"
+        "OwnerKey" = "8:_CD7BAD292B9F42D4A51C937A67F8AB03"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_34D59308129B26D49A87B70D8BBE8349"
-        "OwnerKey" = "8:_F05C60C90AC243DCC23D950FAD2D372F"
+        "OwnerKey" = "8:_A590D0BCB9444C08AD5B0E8CAF85D0B2"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_34D59308129B26D49A87B70D8BBE8349"
+        "OwnerKey" = "8:_D0BEB3A1FEB80811E80C489CB19C51F2"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_34D59308129B26D49A87B70D8BBE8349"
+        "OwnerKey" = "8:_50EC3310EE874D06820B783A570DE59A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_4710037B266A35BEF8933AA64C5A304B"
         "OwnerKey" = "8:_34D59308129B26D49A87B70D8BBE8349"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4F5605F1FCDD415C853C5A03DBA318A3"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -87,25 +99,13 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_64D8D2860C9C43DE8CCEE64EBB6371EE"
+        "MsmKey" = "8:_64CC3EC3AADB495FB1EA8DC35B59F731"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_762F9CDAC89D4066A84B2BF7D2867BE1"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_8695FDFA240140F19C710E573079D5C9"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_86B01168E9984C5786166069D458737F"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -123,7 +123,13 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_8E7867422E9B420CA7070BF851623807"
+        "MsmKey" = "8:_89A287FC3AAB449385FC062CC0BFC8DC"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_96F6EFC9115C4735B28B21260C762F4B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -153,6 +159,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_A590D0BCB9444C08AD5B0E8CAF85D0B2"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_C40AAF2E6DBAD324D1793359CF31C887"
         "OwnerKey" = "8:_A1DDF0037029345AD2B4E63F9F660F0D"
         "MsmSig" = "8:_UNDEFINED"
@@ -165,8 +177,32 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_C482A262CAD4442EA54557A3934DEB67"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_CACB862C8E424BC4A0307012C2EEB7FE"
         "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_CD7BAD292B9F42D4A51C937A67F8AB03"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D0BEB3A1FEB80811E80C489CB19C51F2"
+        "OwnerKey" = "8:_50EC3310EE874D06820B783A570DE59A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D0BEB3A1FEB80811E80C489CB19C51F2"
+        "OwnerKey" = "8:_CD7BAD292B9F42D4A51C937A67F8AB03"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -183,7 +219,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_E07F72777ED242D99887339B439B3ADE"
+        "MsmKey" = "8:_DFFA0FEB235E48AE941CC78FC4AAD549"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -201,62 +237,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_F05C60C90AC243DCC23D950FAD2D372F"
-        "OwnerKey" = "8:_50EC3310EE874D06820B783A570DE59A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_F0B2FADF30202AA169E8AF2FF0854B87"
         "OwnerKey" = "8:_34D59308129B26D49A87B70D8BBE8349"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_1714E2798D0243529B8EB81DE2B64E66"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_34D59308129B26D49A87B70D8BBE8349"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_971CAA5A71E8A9F98384CCCA00AF6531"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_13107F24EC36ADE57E9F7A1CB5379C17"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_DA42BE82CD784F84BD6CB1342A496862"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4710037B266A35BEF8933AA64C5A304B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_E3A69CCE416FEE4E5EED346D16C9419C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_876BA67EEBDE17EAC79FE64625226490"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -268,31 +250,19 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_1641EC78D988413492EEC48FB28F9712"
+        "OwnerKey" = "8:_96F6EFC9115C4735B28B21260C762F4B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_34A937D22103B5CC8DBD46D87F6AE2C4"
+        "OwnerKey" = "8:_E3A69CCE416FEE4E5EED346D16C9419C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_586E3A9B6E5AAFA53BCFDBBD5FE00035"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A1DDF0037029345AD2B4E63F9F660F0D"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_C40AAF2E6DBAD324D1793359CF31C887"
+        "OwnerKey" = "8:_DA42BE82CD784F84BD6CB1342A496862"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -304,7 +274,43 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_C40AAF2E6DBAD324D1793359CF31C887"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_A1DDF0037029345AD2B4E63F9F660F0D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_9A7199F3EBDC0E6EC2B07199D163E96F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_971CAA5A71E8A9F98384CCCA00AF6531"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_876BA67EEBDE17EAC79FE64625226490"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_86B04C055C7E2E5331FC035C0ED0FF4B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_586E3A9B6E5AAFA53BCFDBBD5FE00035"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -316,7 +322,31 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_9A7199F3EBDC0E6EC2B07199D163E96F"
+        "OwnerKey" = "8:_4710037B266A35BEF8933AA64C5A304B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_34D59308129B26D49A87B70D8BBE8349"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_34A937D22103B5CC8DBD46D87F6AE2C4"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_1641EC78D988413492EEC48FB28F9712"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_13107F24EC36ADE57E9F7A1CB5379C17"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -337,6 +367,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -353,6 +391,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -454,41 +508,10 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_1714E2798D0243529B8EB81DE2B64E66"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3034812AB5514DACBF950A49B21A0410"
             {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:HH_ProtobufTool_WPF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_1714E2798D0243529B8EB81DE2B64E66"
-                    {
-                    "Name" = "8:HH_ProtobufTool_WPF.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:..\\HH_ProtobufTool_WPF\\bin\\Release\\netcoreapp3.1\\HH_ProtobufTool_WPF.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_42DB942BE512499992380CF017603A01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_283E8D00EB1445C4870B531CAF7F8856"
-            {
-            "SourcePath" = "8:..\\HH_ProtobufTool_WPF\\bin\\Release\\netcoreapp3.1\\HH_ProtobufTool_WPF.deps.json"
-            "TargetName" = "8:HH_ProtobufTool_WPF.deps.json"
+            "SourcePath" = "8:..\\HH_ProtobufTool_WPF\\bin\\Release\\netcoreapp3.1\\HH_ProtobufTool_WPF.runtimeconfig.dev.json"
+            "TargetName" = "8:HH_ProtobufTool_WPF.runtimeconfig.dev.json"
             "Tag" = "8:"
             "Folder" = "8:_42DB942BE512499992380CF017603A01"
             "Condition" = "8:"
@@ -598,6 +621,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4F5605F1FCDD415C853C5A03DBA318A3"
+            {
+            "SourcePath" = "8:..\\HH_ProtobufTool_WPF\\bin\\Release\\netcoreapp3.1\\HH_ProtobufTool_WPF.deps.json"
+            "TargetName" = "8:HH_ProtobufTool_WPF.deps.json"
+            "Tag" = "8:"
+            "Folder" = "8:_42DB942BE512499992380CF017603A01"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_50EC3310EE874D06820B783A570DE59A"
             {
             "AssemblyRegister" = "3:1"
@@ -691,10 +734,10 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_64D8D2860C9C43DE8CCEE64EBB6371EE"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_64CC3EC3AADB495FB1EA8DC35B59F731"
             {
-            "SourcePath" = "8:..\\HH_ProtobufTool_WPF\\bin\\Release\\netcoreapp3.1\\HH_ProtobufTool_WPF.runtimeconfig.dev.json"
-            "TargetName" = "8:HH_ProtobufTool_WPF.runtimeconfig.dev.json"
+            "SourcePath" = "8:..\\HH_ProtobufTool_WPF\\bin\\Release\\netcoreapp3.1\\HH_ProtobufTool_WPF.exe"
+            "TargetName" = "8:HH_ProtobufTool_WPF.exe"
             "Tag" = "8:"
             "Folder" = "8:_42DB942BE512499992380CF017603A01"
             "Condition" = "8:"
@@ -726,46 +769,6 @@
                 }
             "SourcePath" = "8:..\\HH_ProtobufTool_WPF\\bin\\Release\\netcoreapp3.1\\System.CodeDom.dll"
             "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_42DB942BE512499992380CF017603A01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8695FDFA240140F19C710E573079D5C9"
-            {
-            "SourcePath" = "8:..\\HH_ProtobufTool_WPF\\bin\\Release\\netcoreapp3.1\\HH_ProtobufTool_WPF.runtimeconfig.json"
-            "TargetName" = "8:HH_ProtobufTool_WPF.runtimeconfig.json"
-            "Tag" = "8:"
-            "Folder" = "8:_42DB942BE512499992380CF017603A01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_86B01168E9984C5786166069D458737F"
-            {
-            "SourcePath" = "8:..\\HH_ProtobufTool_WPF\\bin\\Release\\netcoreapp3.1\\HH_ProtobufTool_WPF.pdb"
-            "TargetName" = "8:HH_ProtobufTool_WPF.pdb"
             "Tag" = "8:"
             "Folder" = "8:_42DB942BE512499992380CF017603A01"
             "Condition" = "8:"
@@ -844,10 +847,41 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8E7867422E9B420CA7070BF851623807"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_89A287FC3AAB449385FC062CC0BFC8DC"
             {
-            "SourcePath" = "8:..\\HH_ProtobufTool_WPF\\bin\\Release\\netcoreapp3.1\\HH_ProtobufTool_WPF.exe"
-            "TargetName" = "8:HH_ProtobufTool_WPF.exe"
+            "SourcePath" = "8:..\\HH_ProtobufTool_WPF\\bin\\Release\\netcoreapp3.1\\HH_ProtobufTool_WPF.runtimeconfig.json"
+            "TargetName" = "8:HH_ProtobufTool_WPF.runtimeconfig.json"
+            "Tag" = "8:"
+            "Folder" = "8:_42DB942BE512499992380CF017603A01"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_96F6EFC9115C4735B28B21260C762F4B"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:HH_ProtobufTool_WPF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_96F6EFC9115C4735B28B21260C762F4B"
+                    {
+                    "Name" = "8:HH_ProtobufTool_WPF.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\HH_ProtobufTool_WPF\\bin\\Release\\netcoreapp3.1\\HH_ProtobufTool_WPF.dll"
+            "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_42DB942BE512499992380CF017603A01"
             "Condition" = "8:"
@@ -957,6 +991,37 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A590D0BCB9444C08AD5B0E8CAF85D0B2"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:System.CodeDom, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_A590D0BCB9444C08AD5B0E8CAF85D0B2"
+                    {
+                    "Name" = "8:System.CodeDom.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\HH_ProtobufTool_WPF\\bin\\Release\\netcoreapp3.1\\System.CodeDom.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_42DB942BE512499992380CF017603A01"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C40AAF2E6DBAD324D1793359CF31C887"
             {
             "AssemblyRegister" = "3:1"
@@ -988,6 +1053,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C482A262CAD4442EA54557A3934DEB67"
+            {
+            "SourcePath" = "8:..\\HH_ProtobufTool_WPF\\bin\\Release\\netcoreapp3.1\\Config.xml"
+            "TargetName" = "8:Config.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_42DB942BE512499992380CF017603A01"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_CACB862C8E424BC4A0307012C2EEB7FE"
             {
             "SourcePath" = "8:..\\HH_ProtobufTool_WPF\\HH_ProtobufTool_Icon.ico"
@@ -1006,6 +1091,68 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_CD7BAD292B9F42D4A51C937A67F8AB03"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_CD7BAD292B9F42D4A51C937A67F8AB03"
+                    {
+                    "Name" = "8:System.Management.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\HH_ProtobufTool_WPF\\bin\\Release\\netcoreapp3.1\\System.Management.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_42DB942BE512499992380CF017603A01"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D0BEB3A1FEB80811E80C489CB19C51F2"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:System.CodeDom, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_D0BEB3A1FEB80811E80C489CB19C51F2"
+                    {
+                    "Name" = "8:System.CodeDom.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:System.CodeDom.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_42DB942BE512499992380CF017603A01"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D70481CF7923733E5E8219451A8E5B99"
@@ -1070,10 +1217,10 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E07F72777ED242D99887339B439B3ADE"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DFFA0FEB235E48AE941CC78FC4AAD549"
             {
-            "SourcePath" = "8:..\\HH_ProtobufTool_WPF\\bin\\Release\\netcoreapp3.1\\Config.xml"
-            "TargetName" = "8:Config.xml"
+            "SourcePath" = "8:..\\HH_ProtobufTool_WPF\\bin\\Release\\netcoreapp3.1\\HH_ProtobufTool_WPF.pdb"
+            "TargetName" = "8:HH_ProtobufTool_WPF.pdb"
             "Tag" = "8:"
             "Folder" = "8:_42DB942BE512499992380CF017603A01"
             "Condition" = "8:"
@@ -1139,37 +1286,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F05C60C90AC243DCC23D950FAD2D372F"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.CodeDom, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_F05C60C90AC243DCC23D950FAD2D372F"
-                    {
-                    "Name" = "8:System.CodeDom.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:System.CodeDom.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_42DB942BE512499992380CF017603A01"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F0B2FADF30202AA169E8AF2FF0854B87"
@@ -1282,7 +1398,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:HH_ProtobufTool_Setup"
         "ProductCode" = "8:{DFBD007D-28FF-4F9C-ADCF-39B2547118AF}"
-        "PackageCode" = "8:{5ED8EB5B-6B99-4780-944B-C358B7E514C6}"
+        "PackageCode" = "8:{67C0D8E1-0919-4D99-8685-0526DCCAF57D}"
         "UpgradeCode" = "8:{8B395878-6CA7-45A4-8D21-657E97BDCB9D}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
