@@ -1,0 +1,208 @@
+﻿<Window x:Class="HH_ProtobufTool_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="HH_ProtobufTool 协议生成工具 V1.0.0" Height="600" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="HH_ProtobufTool 协议生成工具" FontSize="20" FontWeight="Bold" Margin="0,0,0,10" />
+
+        <ScrollViewer Grid.Row="1">
+            <ScrollViewer.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#FFF8F8F8" Offset="0" /> <GradientStop Color="#FFEEEEEE" Offset="1" />
+                </LinearGradientBrush>
+            </ScrollViewer.Background>
+            <StackPanel>
+                <GroupBox Header="Protobuf路径配置" Margin="0,0,0,10">
+                    <StackPanel>
+                        <Label Content="Protoc配置路径:" />
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <TextBox x:Name="ProtocPath" Grid.Column="0" Margin="5,0,5,0"
+                                     HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                            <Button Content="..." Grid.Column="1" Width="80"
+                                    HorizontalAlignment="Right" Click="BrowseProtocPath_Click" />
+                        </Grid>
+                    </StackPanel>
+                </GroupBox>
+
+                <GroupBox Header="C#客户端" Margin="0,0,0,10">
+                    <StackPanel>
+                        <Label Content="Protobuf输出路径:" />
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <TextBox x:Name="ClientOutProtoPath" Grid.Column="0" Margin="5,0,5,0"
+                                     HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                            <Button Content="..." Grid.Column="1" Width="80"
+                                    HorizontalAlignment="Right" Click="BrowseClientOutProtoPath_Click" />
+                        </Grid>
+                        <Label Content="ProtoHandler输出路径:" />
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <TextBox x:Name="ClientOutProtoHandlerPath" Grid.Column="0" Margin="5,0,5,0"
+                                     HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                            <Button Content="..." Grid.Column="1" Width="80"
+                                    HorizontalAlignment="Right" Click="BrowseClientOutProtoHandlerPath_Click" />
+                        </Grid>
+                        <Label Content="ProtoId文件路径:" />
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <TextBox x:Name="ClientOutProtoIdDefinePath" Grid.Column="0" Margin="5,0,5,0"
+                                     HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                            <Button Content="..." Grid.Column="1" Width="80"
+                                    HorizontalAlignment="Right" Click="BrowseClientOutProtoIdDefinePath_Click" />
+                        </Grid>
+                        <Label Content="SocketProtoListener文件路径:" />
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <TextBox x:Name="ClientOutSocketProtoListenerPath" Grid.Column="0" Margin="5,0,5,0"
+                                     HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                            <Button Content="..." Grid.Column="1" Width="80"
+                                    HorizontalAlignment="Right" Click="BrowseClientOutSocketProtoListenerPath_Click" />
+                        </Grid>
+                    </StackPanel>
+                </GroupBox>
+
+                <GroupBox Header="Lua客户端" Margin="0,0,0,10">
+                    <StackPanel>
+                        <Label Content="PB文件输出路径:" />
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <TextBox x:Name="ClientOutLuaPBPath" Grid.Column="0" Margin="5,0,5,0"
+                                     HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                            <Button Content="..." Grid.Column="1" Width="80"
+                                    HorizontalAlignment="Right" Click="BrowseClientOutLuaPBPath_Click" />
+                        </Grid>
+                        <Label Content="ProtoHandler输出路径:" />
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <TextBox x:Name="ClientOutLuaProtoHandlerPath" Grid.Column="0" Margin="5,0,5,0"
+                                     HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                            <Button Content="..." Grid.Column="1" Width="80"
+                                    HorizontalAlignment="Right" Click="BrowseClientOutLuaProtoHandlerPath_Click" />
+                        </Grid>
+                        <Label Content="ProtoDef文件路径:" />
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <TextBox x:Name="ClientOutLuaProtoDefPath" Grid.Column="0" Margin="5,0,5,0"
+                                     HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                            <Button Content="..." Grid.Column="1" Width="80"
+                                    HorizontalAlignment="Right" Click="BrowseClientOutLuaProtoDefPath_Click" />
+                        </Grid>
+                        <Label Content="ProtoListener文件路径:" />
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <TextBox x:Name="ClientOutLuaProtoListenerPath" Grid.Column="0" Margin="5,0,5,0"
+                                     HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                            <Button Content="..." Grid.Column="1" Width="80"
+                                    HorizontalAlignment="Right" Click="BrowseClientOutLuaProtoListenerPath_Click" />
+                        </Grid>
+                    </StackPanel>
+                </GroupBox>
+
+                <GroupBox Header="服务器端" Margin="0,0,0,10">
+                    <StackPanel>
+                        <Label Content="Protobuf输出路径:" />
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <TextBox x:Name="ServerOutProtoPath" Grid.Column="0" Margin="5,0,5,0"
+                                     HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                            <Button Content="..." Grid.Column="1" Width="80"
+                                    HorizontalAlignment="Right" Click="BrowseServerOutProtoPath_Click" />
+                        </Grid>
+                        <Label Content="ProtoId文件路径:" />
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <TextBox x:Name="ServerOutProtoIdDefinePath" Grid.Column="0" Margin="5,0,5,0"
+                                     HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                            <Button Content="..." Grid.Column="1" Width="80"
+                                    HorizontalAlignment="Right" Click="BrowseServerOutProtoIdDefinePath_Click" />
+                        </Grid>
+                    </StackPanel>
+                </GroupBox>
+
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- 自适应进度条按钮组 -->
+        <Grid Grid.Row="2" Margin="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <!-- 进度条容器 -->
+            <Border Grid.Column="0"
+                    Background="#F0F0F0"
+                    CornerRadius="2">
+                <Grid>
+                    <ProgressBar x:Name="ProgressIndicator"
+                                 Background="#E0E0E0"
+                                 HorizontalAlignment="Stretch"
+                                 Value="0">
+                    </ProgressBar>
+
+                    <!-- 进度文本 -->
+                    <TextBlock x:Name="ProgressTextBlock"
+                               Text="准备生成协议..."
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Foreground="#333333"
+                               FontWeight="Medium" />
+                </Grid>
+            </Border>
+
+            <!-- 生成按钮 -->
+            <Button Grid.Column="1"
+                    x:Name="GenerateButton"
+                    Content="生成协议"
+                    Width="120"
+                    Height="30"
+                    Margin="10,0,0,0"
+                    HorizontalAlignment="Right"
+                    Background="#4CAF50"
+                    Foreground="White"
+                    FontWeight="Bold"
+                    Click="GenerateButton_Click" />
+        </Grid>
+
+    </Grid>
+</Window>

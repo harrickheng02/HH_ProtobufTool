@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "yEIuG01vRBk=",
+  "success": true,
+  "projectFilePath": "C:\\Code\\HH_ProtobufTool\\HH_ProtobufTool_WPF\\HH_ProtobufTool_WPF.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\chens\\.nuget\\packages\\system.codedom\\9.0.8\\system.codedom.9.0.8.nupkg.sha512",
+    "C:\\Users\\chens\\.nuget\\packages\\system.management\\9.0.8\\system.management.9.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}
