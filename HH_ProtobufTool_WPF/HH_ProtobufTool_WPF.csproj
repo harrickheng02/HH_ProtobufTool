@@ -6,6 +6,8 @@
         <UseWPF>true</UseWPF>
 		<UseWindowsForms>true</UseWindowsForms>
 		<ApplicationIcon>HH_ProtobufTool_Icon.ico</ApplicationIcon>
+		<AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+		<StartupObject />
     </PropertyGroup>
 
     <ItemGroup>

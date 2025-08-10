@@ -5,14 +5,10 @@
       "System.CodeDom/9.0.8": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/System.CodeDom.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/System.CodeDom.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/System.CodeDom.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/System.CodeDom.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp2.0/System.CodeDom.targets": {}
@@ -24,14 +20,10 @@
           "System.CodeDom": "9.0.8"
         },
         "compile": {
-          "lib/netstandard2.0/System.Management.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/System.Management.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/System.Management.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/System.Management.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp2.0/System.Management.targets": {}
@@ -128,6 +120,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -139,6 +132,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "System.Management": {
             "target": "Package",
