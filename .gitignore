@@ -1,0 +1,69 @@
+# Visual Studio 用户特定文件
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vcxproj.filters
+
+# 用户个性化配置 (MonoDevelop/Xamarin Studio)
+*.userprefs
+
+# 编译输出目录
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+[Ll]og/
+
+# Visual Studio 缓存目录
+.vs/
+.vscode/
+.idea/
+
+# NuGet 包目录
+packages/
+*.nupkg
+.nuget/
+
+# 单元测试结果
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.VisualState.xml
+TestResult.xml
+
+# 临时文件
+*.tmp
+*.tmp_proj
+*.log
+*.tlog
+*.cache
+*.swp
+
+# 代码分析文件
+*.ruleset
+*.FxCop
+
+# ReSharper 插件生成文件
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# ClickOnce 发布目录
+publish/
+
+# 项目引用文件
+*.pdb
+*.ilk
+*.meta
+*.obj
+*.pch
+*.idb
+*.lib
+
+# 安装包输出
+[Ee]xpress/

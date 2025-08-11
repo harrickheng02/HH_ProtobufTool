@@ -88,25 +88,31 @@ namespace HH_ProtobufTool_WPF
 
         private static void UpdateConfig(string fieldName, string newValue)
         {
-            if (AppDomain.CurrentDomain.BaseDirectory == null) return;
-            var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Config.xml");
+            var path = Path.Combine(Environment.CurrentDirectory, "Config.xml");
             if (!File.Exists(path))
-                throw new FileNotFoundException("配置文件不存在");
+            {
+                System.Windows.Forms.MessageBox.Show("配置文件不存在");
+                return;
+            }
 
             var doc = new XmlDocument();
             doc.Load(path);
 
             var node = doc.SelectSingleNode($"/Root/{fieldName}");
             if (node == null)
-                throw new ArgumentException($"配置字段 {fieldName} 不存在");
+            {
+                System.Windows.Forms.MessageBox.Show($"配置字段 {fieldName} 不存在");
+                return;
+            }
 
             node.InnerText = newValue.Trim();
 
             // 使用带编码设置的XmlWriter
-            var settings = new XmlWriterSettings {
+            var settings = new XmlWriterSettings
+            {
                 Indent = true,
                 Encoding = System.Text.Encoding.UTF8,
-                CloseOutput = true  // 确保流被正确关闭
+                CloseOutput = true // 确保流被正确关闭
             };
 
             try
@@ -117,13 +123,12 @@ namespace HH_ProtobufTool_WPF
             catch (UnauthorizedAccessException ue)
             {
                 // 处理权限问题
-                Debug.Write(ue.Message);
+                System.Windows.Forms.MessageBox.Show($"权限错误详情:{ue.Message}");
             }
             catch (IOException ex)
             {
                 // 处理文件占用情况
-                Debug.Write(ex.Message);
-                throw;
+                System.Windows.Forms.MessageBox.Show(ex.Message);
             }
         }
 

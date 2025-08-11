@@ -1,5 +1,7 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Text;
 using System.Xml.Linq;
 
 namespace HH_ProtobufTool
@@ -29,8 +31,9 @@ namespace HH_ProtobufTool
         /// </summary>
         public static void Init()
         {
-            var xmlPath = Path.Combine(Environment.CurrentDirectory, "Config.xml");
-            var doc = XDocument.Load(xmlPath);
+            if (AppDomain.CurrentDomain.BaseDirectory == null) return;
+            var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"Config.xml");
+            var doc = XDocument.Load(path);
             if (doc.Root == null) return;
             ProtocPath = doc.Root.Element("ProtocPath")?.Value;
 
